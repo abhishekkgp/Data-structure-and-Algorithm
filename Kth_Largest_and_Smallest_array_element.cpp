@@ -1,6 +1,6 @@
 /*
 
-Problem: Given an integer array nums and an integer k, 
+Problem: Given an integer array and an integer k, 
 return the Kth smallest and kth largest element in the array.
 
 Note that it is the kth largest element in the sorted order, 
