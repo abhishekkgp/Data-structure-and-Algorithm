@@ -1,3 +1,4 @@
+/*
 PROBLEM:
 -------
 Design a data structure that works like a LRU Cache. 
@@ -14,10 +15,12 @@ set(key, value) : if the key is already present, update its value. If not presen
 If the cache reaches its capacity it should invalidate the least recently used item before inserting the new item.
 In the constructor of the clas the capacity of the cache should be intitialized.
 
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------  
 SOLUTION-1:- USING LIST(Doubly linked list STL)
 --------
- 
+ */
+
  #include <bits/stdc++.h>
 using namespace std;
 
