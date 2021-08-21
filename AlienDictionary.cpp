@@ -60,6 +60,8 @@ string AlienDictionary(string dict[], int N, int K) {
             adj[s1[i1]-'a'].push_back(s2[i2]-'a');
         }
     }
+    
+    //Now using topological sort logic and then reversing output to get our ans
     string ans;
     vector<int> vis(K,0);
     // as all k value(character in Alian dictionary) are from 
