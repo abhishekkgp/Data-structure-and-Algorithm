@@ -32,7 +32,7 @@ int PrimsMinimumSpanningTree(int V, vector<vector<int>> edges)
     // MIN HEAP applying using priority_queue
     priority_queue< pair<int,int>, vector<pair<int,int> >, geater<pair<int,int> > > pq;
 
-    vector<bool> vis(V,false); // to check wheather we have already added the node in minimum span or not
+    vector<bool> vis(V,false); // to check wheather we have already added the node in minimum spanning tree or not
     
     int MST=0; // result of minimum weight some storing in this
 
