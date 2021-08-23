@@ -19,7 +19,7 @@ example:
 Output: 4
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-  int spanningTree(int V, vector<vector<int>> edges)
+int PrimsMinimumSpanningTree(int V, vector<vector<int>> edges)
 {
     // storing {weight,node} pair for each node and the node it is connected with
     vector<vector< pair<int,int> >> adj(V); 
