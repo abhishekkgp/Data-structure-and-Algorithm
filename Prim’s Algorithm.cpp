@@ -57,7 +57,7 @@ int PrimsMinimumSpanningTree(int V, vector<vector<int>> edges)
             // Push only those nodes (weight,node) that are not yet present in the minumum spanning tree
             for(auto x: adj[node])
             {
-                int val=x.first;
+                int val=x.second;
                 if(vis[val]==false)
                 {
                     pq.push(x);
