@@ -3,7 +3,7 @@ Problem description:
     Note: The Graph doesn't contain any negative weight cycle.
   
  Time complexity: O(ELogV))     [as there will be at most O(E) vertices in priority queue and O(Log E) is same as O(Log V) ]
-                 
+ Space complexity: "O(E+V)"    [as each edge will be included in priority_queue only once and also we are using distance vector of size V so space compalexity is O(E+V) ]             
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
       
