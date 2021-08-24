@@ -25,7 +25,7 @@ Solution approach:-
       
       
 Time complexity: "O(E Log V)"  [as there will be at most O(E) vertices in priority queue and O(Log E) is same as O(Log V) ]
-space complexity: "O(E^2)" 
+space complexity: "O(V^2)" 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 int PrimsMinimumSpanningTree(int V, vector<vector<int>> edges)
