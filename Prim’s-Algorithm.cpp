@@ -22,6 +22,10 @@ Solution approach:-
     starts with an empty spanning tree. The idea is to maintain two sets of vertices. The first set contains the vertices already included in the MST, 
     the other set contains the vertices not yet included. At every step, it considers all the edges that connect the two sets, 
     and picks the minimum weight edge from these edges. After picking the edge, it moves the other endpoint of the edge to the set containing MST. 
+      
+      
+Time complexity: "O(E Log V)"  [as there will be at most O(E) vertices in priority queue and O(Log E) is same as O(Log V) ]
+space complexity: "O(E^2)" 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 int PrimsMinimumSpanningTree(int V, vector<vector<int>> edges)
