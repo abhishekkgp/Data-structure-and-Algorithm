@@ -12,7 +12,10 @@ Example 1:
 Example 2:
     Input: s = "cbbd"
     Output: "bb"
-      
+ 
+        
+Time complexity: O(n^2)  [A nested traversal of the string is needed. So time complexity is O(n^2)]
+Auxiliary Space: O(1)    [No extra space is needed]
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 string longestPalindrome(string s) 
