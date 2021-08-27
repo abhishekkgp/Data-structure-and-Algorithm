@@ -1,5 +1,5 @@
 Problem description:
-Given a string s, return the longest palindromic substring in s.
+    Given a string s, return the longest palindromic substring in s.
 
   
 Example 1:
@@ -15,38 +15,38 @@ Example 2:
       
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-string longestPalindrome(string s) {
-        int n=s.size();
-        int low,high,maxlen=1,start=0;
-        for(int i=0;i<n;i++)
+string longestPalindrome(string s) 
+{
+    int n=s.size();
+    int low,high,maxlen=1,start=0;
+    for(int i=0;i<n;i++)
+    {
+        low=i;
+        high=i+1;
+        while(low>=0 && high<n && s[low]==s[high])
         {
-            low=i;
-            high=i+1;
-            while(low>=0 && high<n && s[low]==s[high])
+            if(high-low+1>maxlen)
             {
-                if(high-low+1>maxlen)
-                {
-                    maxlen=high-low+1;
-                    start=low;
-                }
-                low--;
-                high++;
-                
+                maxlen=high-low+1;
+                start=low;
             }
-            low=i-1;
-            high=i+1;
-            while(low>=0 && high<n && s[low]==s[high])
-            {
-                if(high-low+1>maxlen)
-                {
-                    maxlen=high-low+1;
-                    start=low;
-                }
-                low--;
-                high++;
-                
-            }
+            low--;
+            high++;
+
         }
-        return s.substr(start,maxlen);
-    
+        low=i-1;
+        high=i+1;
+        while(low>=0 && high<n && s[low]==s[high])
+        {
+            if(high-low+1>maxlen)
+            {
+                maxlen=high-low+1;
+                start=low;
+            }
+            low--;
+            high++;
+
+        }
     }
+    return s.substr(start,maxlen);
+}
