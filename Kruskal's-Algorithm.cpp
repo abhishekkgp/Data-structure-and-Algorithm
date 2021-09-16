@@ -14,7 +14,7 @@ Output Format:
     Return Minimum Weight/Cost Spanning tree.
         
 Time complexity: " O(ElogE) or O(ElogV)"  [as Sorting of edges takes O(ELogE) time & iterating all edges and find union take O(ELogV).]
-                  (overall complexity is O(ELogE + ELogV) time but the value of E can be at most O(V2), so O(LogV) is O(LogE) the same. 
+                  (overall complexity is O(ELogE + ELogV) time but the value of E can be at most O(V2), so O(LogV) & O(LogE) are same. 
                    So, overall time complexity is O(ElogE) or O(ElogV))
 space complexity: "O(V)"    [ as we are using two vector array to store parent and rank of each node so both are taking O(V) space]
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
